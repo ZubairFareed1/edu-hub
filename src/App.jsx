@@ -1,15 +1,39 @@
+// React Imports
 import React from "react";
-import Header from "./components/Header/Header";
-import "./App.css";
-import Hero from "./components/HeroSection/Hero";
+
+// UI Components Imports
+import InstructorSection from "./components/InstructorSection/InstructorSection";
+import TestimonalSection from "./components/TestimonalSection/TestimonalSection";
 import Benefits from "./components/BenefitsSection/Benefits";
 import Courses from "./components/CoursesSection/Courses";
-import InstructorSection from "./components/InstructorSection/InstructorSection";
+import Hero from "./components/HeroSection/Hero";
+import Header from "./components/Header/Header";
 
+// Stylesheets Imports
+import "./App.css";
+import { useEffect } from "react";
+
+/**
+ * @description The main App component.
+ * @returns {React.JSX.Element}
+ * @example
+ * ```ts
+ * return <App />
+ * ```
+ */
 export default function App() {
-  document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-  });
+  // Adds and removes the context menu event listener to prevent default the event effects
+  useEffect(() => {
+    const preventDefaultConextMenu = (event) => {
+      event.preventDefault();
+    };
+
+    document.addEventListener("contextmenu", preventDefaultConextMenu);
+
+    return () => {
+      document.removeEventListener("contextmenu", preventDefaultConextMenu);
+    };
+  }, []);
 
   return (
     <div>
@@ -18,6 +42,7 @@ export default function App() {
       <Benefits />
       <Courses />
       <InstructorSection />
+      <TestimonalSection />
     </div>
   );
 }

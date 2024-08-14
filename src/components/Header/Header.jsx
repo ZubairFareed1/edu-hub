@@ -17,7 +17,7 @@ export default function Header() {
   };
   return (
     <>
-    <div className='flex flex-row py-4 justify-between bg-white px-4 md:px-12 lg:px-16 fixed top-0 left-0 w-screen z-30 shadow-md' >
+    <div className='flex flex-row py-4 justify-between bg-white px-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32 fixed top-0 left-0 w-screen z-30 shadow-md' >
         <div className='flex justify-center items-center'>
             <a className='text-3xl font-bold' href="#"><span className='text-primary-bg-color'>E</span>duhub<span className='text-primary-bg-color'>.</span></a>
         </div>

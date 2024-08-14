@@ -6,7 +6,7 @@ import { FaPlay } from "react-icons/fa";
 
 export default function Benefits() {
   return (
-    <div className="px-4 md:px-12 lg:px-16 w-full">
+    <div className="px-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32 w-full">
       <div className="pt-12">
         <h3 className="text-2xl sm:text-3xl  font-semibold text-center ">
           Search Courses
@@ -30,7 +30,7 @@ export default function Benefits() {
             <img src="Benefits-image.svg" alt="Benefits-img" className="lg:size-11/12 md:size-3/4  " />
           </div>
           <div className="h-full  lg:w-1/2">
-            <h3 className="text-2xl md:text-3xl font-semibold text-center sm:text-left ">
+            <h3 className="text-2xl md:text-3xl font-semibold sm:text-center text-left md:text-left ">
               <span className="text-primary-bg-color">Benefits</span> From Our
               Online Learning
             </h3>

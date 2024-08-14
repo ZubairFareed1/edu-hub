@@ -4,10 +4,10 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <div className=" px-4 md:px-12 lg:px-16 mt-24">
+      <div className=" px-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32 mt-24">
         <div className="flex h-full flex-col lg:flex-row">
           <div className="w-full  lg:w-1/2 pb-8 ">
-            <h1 className="md:text-5xl lg:text-5xl text-4xl font-bold w-full lg:text-left text-center">
+            <h1 className="md:text-5xl xl:text-6xl text-4xl font-bold w-full lg:text-left text-center">
               Explore unique <br /> methods to develop <br />
               your talents.
             </h1>

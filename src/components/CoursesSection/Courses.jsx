@@ -1,7 +1,14 @@
 import React,{useState} from "react";
 import { FaStar, FaBookOpen, FaUser } from "react-icons/fa";
 
-
+/**
+ * @descrition Home page course section component 
+ * @returns {React.JSX.Element}
+ * ```js
+ * <Course/>
+ * 
+ * ```
+ */
 export default function Courses() {
   const [card, setCard] = useState([
     {
@@ -54,7 +61,7 @@ export default function Courses() {
     }
   }
   return (
-    <div className="w-full h-auto py-12 bg-gradient-to-br from-secondary-bg-color to-primary-bg-color px-4 md:px-12 lg:px-16">
+    <div className="w-full h-auto py-12 bg-gradient-to-br from-secondary-bg-color to-primary-bg-color px-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32">
       <div className="w-full">
         <h3 className="text-center text-white text-3xl font-semibold">
           Our Popular Courses

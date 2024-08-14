@@ -4,24 +4,24 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function InstructorSection() {
   
   return (
-    <div className="px-4 md:px-12 lg:px-16">
-      <div className="flex flex-col lg:flex-row h-full w-full my-8 gap-4 md:gap-0">
-        <div className="  lg:w-1/2 mt-4">
-          <h3 className="text-2xl md:text-3xl font-semibold sm:text-center lg:text-left">
-            If You Are A Certified Teacher{" "}
+    <div className="px-4 md:px-12 lg:px-16 xl:px-24 2xl:px-32">
+      <div className="flex flex-col lg:flex-row h-full w-full my-8 gap-4 md:gap-0 ">
+        <div className="  lg:w-1/2 pt-4 ">
+          <h3 className="text-2xl md:text-3xl xl:text-4xl font-semibold sm:text-center lg:text-left leading-9">
+            If You Are A Certified Teacher
             <span className="lg:block hidden">
               <br />
-            </span>{" "}
-            Then{" "}
-            <span className="text-primary-bg-color">Become An Instructor</span>
+            </span>
+            Then
+            <span className="text-primary-bg-color"> Become An Instructor</span>
           </h3>
-          <p className="text-sm md:text-md mt-2 text-gray-700 sm:text-center lg:text-center">
+          <p className="text-sm md:text-md mt-2 text-gray-700 sm:text-center lg:text-left">
             Unlock the opportunity to inspire and educate by joining our team of
             instructors. If you’re a certified teacher, elevate your impact and
             share your expertise with learners worldwide.
           </p>
 
-          <h3 className="text-2xl md:text-3xl font-semibold mt-6 sm:text-center lg:text-left">
+          <h3 className="text-2xl md:text-2xl font-medium mt-6 sm:text-center lg:text-left">
             Enjoy Many Perks
           </h3>
           <div className="flex flex-col md:flex-row md:gap-8 mt-2 sm:justify-center lg:justify-start">
@@ -73,8 +73,8 @@ export default function InstructorSection() {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/2">
-          <img className="size-full md:size-5/6" src="instructor-section-image.svg" alt="" />
+        <div className="lg:w-1/2  flex justify-center items-center">
+          <img className="size-full md:size-5/6 xl:size-11/12" src="instructor-section-image.svg" alt="" />
         </div>
       </div>
     </div>
