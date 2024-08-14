@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.responsive-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.responsive-margin {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width: 1024px) {
+    .responsive-padding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .responsive-margin {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Adjusted to -100% for seamless looping */
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 20s linear infinite; /* Increased duration for smoother effect */
+    white-space: nowrap; /* Prevents images from wrapping to the next line */
+}
+
+.no-scroll {
+    overflow: hidden;
+  }
+  
