@@ -71,7 +71,7 @@ export default function Courses() {
           demands of today’s learners. Dive into engaging content crafted for
           success in every step of your educational journey.
         </p>
-        <div className="pt-8 justify-between gap-2 md:gap-2 p-4 flex md:flex-row flex-col">
+        <div className="pt-8 justify-between gap-2 md:gap-4 lg:gap-8 p-4 flex md:flex-row flex-col">
           {/* Cards */}
           {card.map((item) => (
             <div key={item.id} className="flex-1  bg-slate-50 p-2 rounded shadow-md drop-shadow-md">
@@ -112,7 +112,7 @@ export default function Courses() {
                       <img className="w-8 h-8 rounded-full" src={item.instructorImg} alt="Avatar" />
                       <span className="absolute bottom-0 right-0 block w-3 h-3 bg-green-600 rounded-full"></span>
                     </div>
-                    <h3 className="font-semibold text-gray-800">John Doe</h3>
+                    <h3 className="font-semibold text-gray-800">{item.instructor}</h3>
                   </div>
                   <div>
                     <span className="text-gray-800 font-semibold text-lg">${item.price}</span>

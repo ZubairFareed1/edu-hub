@@ -1,8 +1,10 @@
 import React from "react";
-import { IoSchool } from "react-icons/io5";
 import { FaBookOpen } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
+import { IoSchool } from "react-icons/io5";
+import { FiSearch } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
+
 
 export default function Benefits() {
   return (
@@ -14,7 +16,7 @@ export default function Benefits() {
 
         <div className="flex gap-4 justify-center mt-6 flex-col sm:flex-row ">
           <div className="rounded bg-white border-2 border-gray-200 md:w-1/2 flex gap-2 items-center px-2 sm:px-4 py-2 drop-shadow-sm">
-            <i className="bx bx-search text-slate-500 text-2xl font-medium"></i>
+            <FiSearch className="text-slate-500 text-2xl font-medium" />
             <input
               type="text"
               placeholder="Search for over 100k+ courses"

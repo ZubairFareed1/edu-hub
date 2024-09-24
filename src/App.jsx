@@ -17,7 +17,7 @@ import { useEffect } from "react";
  * @description The main App component.
  * @returns {React.JSX.Element}
  * @example
- * ```ts
+ * ```
  * return <App />
  * ```
  */
